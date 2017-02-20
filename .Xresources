@@ -1,1 +1,48 @@
-/home/ice/.Xresources
+!export LANG=en_GB.UTF-8
+
+rxvt.scrollBar : false
+! General
+URxvt*termName:  rxvt-256color
+!URxvt*loginShell:         true
+URxvt*scrollBar:         false
+URxvt*secondaryScroll:    true
+URxvt*saveLines:         65535
+urxvt*override-redirect:false
+URxvt*borderLess:       false
+URxvt*internalBorder:       0
+URxvt*externalBorder:       0
+ 
+! Appearance
+!  - use a bitmap font
+!urxvt*font:        -xos4-terminus-medium-*-*-*-12-*-*-*-*-*-*-*
+!urxvt*boldFont:    -xos4-terminus-bold-*-*-*-12-*-*-*-*-*-*-*
+!  - use xft for drawing fonts
+!URxvt*font:      xft:Menlo for Powerline:style=RegularForPowerline,xft:Terminess Powerline:pixelsize=16,xft:Inconsolata for Powerline:pixelsize=16
+!URxvt*font:     xft:Inconsolata\-g for Powerline:style=g
+URxvt*font:     xft:Inconsolata\ for\ Powerline:size=14,xft:Font\ Awesome:size:14
+URxvt*depth: 32
+URxvt*background: rgba:0000/0000/0200/c800
+
+URxvt*cursorColor: #DCDCCC
+
+URxvt.iso14755    : false
+
+
+*foreground: #d9e6f2
+*cursorColor: #aeafad
+*color0: #000000
+*color1: #ae3d76
+*color2: #76ae3d
+*color3: #ae763d
+*color4: #3d76ae
+*color5: #763dae
+*color6: #3dae76
+*color7: #d9d9d9
+*color8: #262626
+*color9: #e9c1d5
+*color10: #d5e9c1
+*color11: #e9d5c1
+*color12: #c1d5e9
+*color13: #d5c1e9
+*color14: #c1e9d5
+*color15: #ffffff
