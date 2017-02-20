@@ -20,7 +20,7 @@ bottom = false
 dock = false
 wm-restack = i3
 width = 100%
-height = 22
+height = 24
 
 enable-ipc = true
 
@@ -31,8 +31,8 @@ module-margin-right = 1
 module-margin-left = 0
 
 modules-right = updates filesystem battery date menu0
-modules-center = mpd volume
-modules-left = i3 wlan eth cpu memory
+modules-center = mpd backlight
+modules-left = i3 wlan cpu memory
 
 background = #66090909
 foreground = ${colors.white}
@@ -46,10 +46,10 @@ tray-offset-x =
 tray-maxsize = 
 tray-padding = 
 
-font-0 = terminus:size=8;0
-font-1 = FontAwesome:size=10;0
+font-0 = terminus:size=12;0
+font-1 = FontAwesome:size=12;0
 font-2 = TakaoGothic:weight=bold:size=10;0
-font-3 = FontAwesome:size=8;0
+font-3 = FontAwesome:size=10;0
 
 [module/xwindow]
 type = internal/xwindow
@@ -62,7 +62,7 @@ type = internal/fs
 interval = 25
 
 mount-0 = /
-;mount-1 = /home
+mount-1 = /home
 ;mount-2 = /invalid/mountpoint
 
 label-mounted =  %free%
@@ -211,7 +211,7 @@ label-foreground = ${colors.white}
 
 [module/wlan]
 type = internal/network
-interface = wlp12s0
+interface = wlp2s0
 interval = 3.0
 
 format-connected-padding = 1
@@ -228,7 +228,7 @@ label-disconnected-foreground = ${colors.gray}
 
 [module/eth]
 type = internal/network
-interface = enp9s0
+interface = enp3s0f2
 interval = 3.0
 
 format-connected-padding = 1
@@ -245,7 +245,8 @@ label-disconnected-foreground = ${colors.gray}
 [module/date]
 type = internal/date
 date-alt =   %A %H:%M 
-date =   %b/%d/%y %H:%M 
+#date =   %b/%d/%y %H:%M 
+date =   %H:%M 
 interval = 5
 format-underline = ${colors.white}
 ;format-background = ${colors.black}
@@ -344,9 +345,9 @@ format = <label-toggle> <menu>
 format-underline = ${colors.white}
 format-padding = 1
 
-menu-0-0 =  shutdown
+menu-0-0 =  shutdown 
 menu-0-0-exec = shutdown now
-menu-0-1 =  restart
+menu-0-1 =  restart 
 menu-0-1-exec = shutdown -r now
 menu-0-2 =   cancel
 
