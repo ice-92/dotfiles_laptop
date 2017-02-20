@@ -127,7 +127,9 @@ client.urgent 			$urgent-bg-color 	$urgent-bg-color 	$text-color
 # finds out, if available)
 bar {
         position top
-	status_command i3status
+	status_command polybar Bar
+	separator_symbol "//"
+	mode invisible
 }
 
 
