@@ -130,9 +130,14 @@ bar {
 	status_command polybar Bar
 	separator_symbol "//"
 	mode invisible
+	tray_output LVDS1
 }
 
+bar {
+	position bottom
+	status_command i3blocks -c ~/.config/i3/i3blocks.conf
 
+}
 bindsym $mod+Shift+x exec i3lock-fancy 
 
 
@@ -177,7 +182,7 @@ bindsym $mod+r mode "resize"
 # Press one of + / - (in-/decrement for current workspace) or 0 (remove gaps for current workspace). 
 # If you also press Shift with these keys, the change will be global for all workspaces.
 
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 1 
 gaps inner 5 
 gaps outer 9 
 smart_gaps on
