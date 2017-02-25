@@ -1,4 +1,5 @@
-font pango:Inconsolata\ for\ Powerline:14
+#font pango:Inconsolata\ for\ Powerline:14
+font pango:zekton:9
 floating_modifier $mod
 new_window 1pixel 
 smart_borders on
@@ -78,10 +79,10 @@ bindsym $mod+space focus mode_toggle
 ## WORKSPACES ##
 ################
 
-set $workspace1 "1-MAIN "
-set $workspace2 "2-TERM "
-set $workspace3 "3-CHAT "
-set $workspace4 "4-MEDIA "
+set $workspace1 "1:  "
+set $workspace2 "2:  "
+set $workspace3 "3:  "
+set $workspace4 "4:  "
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
@@ -153,7 +154,7 @@ bar {
 bar {
 	position bottom
 	status_command i3blocks -c ~/.config/i3/i3blocks.conf
-
+	font pango: zekton 13
 }
 bindsym $mod+Shift+x exec i3lock-fancy 
 
