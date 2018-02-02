@@ -16,7 +16,7 @@ green = #aec795
 
 
 [bar/Bar]
-bottom = false
+bottom = true
 dock = false
 wm-restack = i3
 width = 100%
@@ -31,8 +31,8 @@ module-margin-right = 1
 module-margin-left = 1
 
 modules-right = temperature updates filesystem battery date menu0 tray
-modules-center = mpd backlight
-modules-left = i3 wlan cpu memory
+modules-center = 
+modules-left = wlan cpu memory
 
 background = #66090909
 foreground = ${colors.white}

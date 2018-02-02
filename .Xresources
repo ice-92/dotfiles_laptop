@@ -46,3 +46,8 @@ URxvt.iso14755    : false
 *color13: #d5c1e9
 *color14: #c1e9d5
 *color15: #ffffff
+
+! Coloured man pages
+*colorIT: #87af5f
+*colorBD: #d7d7d7
+*colorUL: #87a7d7 
